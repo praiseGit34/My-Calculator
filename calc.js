@@ -8,3 +8,14 @@ function appendToDisplay(input) {
 function clearDisplay() {
     display.value = "";
 }
+//function to evaluate
+document.getElementById("c").addEventListener("click", clearDisplay);
+
+function calculate() {
+    try {
+        //use of the eval method
+        display.value = eval(display.value);
+    } catch(error) {
+        display.value = "error";
+    }
+}
